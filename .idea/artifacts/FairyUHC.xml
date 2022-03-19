@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FairyUHC">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="FairyUHC.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="module-output" name="FairyUHC" />
+    </root>
+  </artifact>
+</component>

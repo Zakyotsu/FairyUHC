@@ -1,0 +1,9 @@
+name: FairyUHC
+version: 4.0
+author: Zakyotsu
+api-version: 1.16
+main: fr.zakyotsu.fairyuhc.FairyUHC
+commands:
+  fairyuhc:
+    aliases: [fuhc]
+    description: Commande de FairyUHC.
