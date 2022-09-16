@@ -4,10 +4,10 @@ import fr.zakyotsu.fairyuhc.FairyUHC;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Team;
 
-public class Lucy implements FairyCharacter {
+public class Lucy implements DefaultCharacter {
 
     private Team team;
-    private FairyEnum
+    private FairyEnum enum1;
 
 
     /**
@@ -43,8 +43,4 @@ public class Lucy implements FairyCharacter {
 
     }
 
-    @Override
-    public void registerEvents() {
-
-    }
 }

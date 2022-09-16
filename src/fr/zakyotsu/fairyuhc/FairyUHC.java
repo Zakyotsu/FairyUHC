@@ -1,11 +1,14 @@
 package fr.zakyotsu.fairyuhc;
 
+import fr.zakyotsu.fairyuhc.characters.DefaultCharacter;
+import fr.zakyotsu.fairyuhc.characters.Lucy;
 import org.bukkit.Bukkit;
 import org.bukkit.GameRule;
 import org.bukkit.plugin.java.JavaPlugin;
 import fr.zakyotsu.fairyuhc.world.*;
 import org.bukkit.scoreboard.Scoreboard;
 
+import java.util.ArrayList;
 import java.util.ServiceConfigurationError;
 
 public class FairyUHC extends JavaPlugin {
@@ -14,6 +17,8 @@ public class FairyUHC extends JavaPlugin {
     private SpawnBuild spawn;
     private Scoreboard sc;
     public static FairyUHC plugin;
+    public static ArrayList<DefaultCharacter> characters;
+
 
     @Override
     public void onEnable() {
@@ -22,14 +27,14 @@ public class FairyUHC extends JavaPlugin {
         plugin = this;
         spawn = new SpawnBuild();
         sc = Bukkit.getScoreboardManager().getMainScoreboard();
+        characters = new ArrayList<>();
+        characters.add(new Lucy("Lucy"));
 
         initializeWorld();
     }
 
     @Override
-    public void onDisable() {
-
-    }
+    public void onDisable() {}
 
     private void initializeWorld() {
         //Setup worldborder
