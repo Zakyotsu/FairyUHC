@@ -1,22 +1,15 @@
-package fr.zakyotsu.fairyuhc;
+package fr.zakyotsu.fairyuhc.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 
-public class Variables {
+public class Constants {
 
     //The current world
     public static final World WORLD = Bukkit.getWorld("world");
     //Spawn location
-    public static final Location spawnLoc = new Location(WORLD, 0, 120, 0);
-
-    public static int currentEpisode = 0;
-
-    public static boolean gameRunning = false;
-    public static boolean isDaylight = false;
-
-
+    public static final Location spawnLoc = new Location(WORLD, 0.5, 120, 0.5);
 
     //At which episode the border starts reducing
     public static final int BORDER_TRIGGER_EP = 3;
@@ -32,9 +25,4 @@ public class Variables {
 
     //The number of time between day/night (MC ticks)
     public static final long TIME_DAY_NIGHT = 6000L;
-
-
-
-
-
 }
